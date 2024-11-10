@@ -16,7 +16,7 @@ To use this component, ensure your project meets the following requirements:
    First, add the `Table` component package to your project:
 
    ```bash
-   npm install rami-table-component
+   npm install rami-table-ui-component
    ```
 
 2. **Add Tailwind CSS**
