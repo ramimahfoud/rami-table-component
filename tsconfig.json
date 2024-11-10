@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "types": ["jest", "node"], // Add "jest" here
+    "target": "ESNext", // Modern syntax for optimized builds
+    "module": "ESNext", // Use ESNext modules
+    "lib": ["DOM", "ESNext"], // Support for browser and modern JavaScript
+    "declaration": true, // Generates .d.ts declaration files for library usage
+    "declarationDir": "./dist/types", // Keeps declarations organized in the dist folder
+    "emitDeclarationOnly": true, // Only emit .d.ts files when running `tsc`
+    "outDir": "./dist", // Output directory for compiled files
+    "jsx": "react-jsx", // React JSX transformation for React 17+
+    "esModuleInterop": true, // Allows default imports from CommonJS modules
+    "skipLibCheck": true, // Skips checking declaration files for faster builds
+    "strict": true, // Enables strict type-checking options
+    "moduleResolution": "Node", // Node module resolution
+    "isolatedModules": true, // Required for bundlers like Babel or tsup
+    "forceConsistentCasingInFileNames": true, // Ensures consistent import casing
+    "resolveJsonModule": true // Allows importing JSON files
+  },
+  "include": ["src","_test_"], // Include only the src folder
+  "exclude": ["node_modules", "dist"] // Exclude folders and test files
+}
